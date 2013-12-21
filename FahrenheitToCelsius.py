@@ -1,5 +1,8 @@
 degrees = int(raw_input ("How much Fahrenheit degrees do you want to convert? "))
-answer1 = degrees - 32
-answer2 = answer1 * 100
-answer3 = answer2 / 180
-print "This will be",answer3,"Celsius degrees"
+
+def to_celsius(degrees):
+  return (degrees - 32) / 1.8
+  
+
+cel = to_celsius(degrees)
+print "This will be",cel,"Celsius degrees"
